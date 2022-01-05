@@ -1,0 +1,146 @@
+/** @format */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+:root {
+	--white: hsl(0, 0%, 100%);
+	--Very-dark-blue: hsl(217, 54%, 11%);
+	--dark-blue: hsl(216, 50%, 16%);
+	--blue: hsl(215, 32%, 27%);
+	--Soft-blue: hsl(215, 51%, 70%);
+	--cyan: hsl(178, 100%, 50%);
+}
+body {
+	background-color: var(--Very-dark-blue);
+	font-family: "Outfit", sans-serif;
+	color: var(--Soft-blue);
+}
+.container {
+	max-width: 1300px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+}
+.wrapper {
+	height: calc(100vh);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#box {
+	width: 25%;
+	margin: 0 auto;
+	background-color: var(--dark-blue);
+	border: 1px solid var(--dark-blue);
+	border-radius: 18px;
+}
+.img {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.img img {
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 12px;
+	cursor: pointer;
+	position: relative;
+}
+.img:hover .img-h {
+	display: flex;
+	align-items: center;
+	background: linear-gradient(130deg, #00a6c0, #00a6c0);
+	height: 99%;
+	border-radius: 12px;
+	visibility: visible;
+}
+.img-h {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	position: absolute;
+	opacity: 0.5;
+	top: 0;
+	cursor: pointer;
+	visibility: hidden;
+}
+.img-h img {
+	width: 15%;
+}
+.text h1 {
+	font-size: 23px;
+	font-weight: 600;
+	margin: 20px auto;
+	color: var(--white);
+}
+.text h1:hover {
+	color: var(--cyan);
+	cursor: pointer;
+}
+.text p {
+	font-size: 18px;
+	font-weight: 400;
+	width: 100%;
+	margin: 0 0 15px 0;
+}
+.s-img {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid var(--blue);
+}
+.s-img p {
+	font-size: 16px;
+	font-weight: 300;
+	margin-bottom: 15px;
+}
+.s-img p img {
+	width: 18%;
+}
+.s-img p span {
+	color: var(--cyan);
+}
+.s-img p span img {
+	width: 10%;
+}
+.creation {
+	width: 100%;
+	margin: 20px auto;
+	display: flex;
+	align-items: center;
+}
+.creation img {
+	width: 15%;
+	margin: 0 8px 0 0;
+	border: 2px solid var(--white);
+	border-radius: 100%;
+}
+.creation p {
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0;
+}
+.creation p span {
+	color: var(--white);
+}
+.creation p span:hover {
+	color: var(--cyan);
+	cursor: pointer;
+}
+@media only screen and (max-width: 375px) {
+	body {
+		font-size: 18px;
+		line-height: 20px;
+		font-weight: 300;
+	}
+	#box {
+		width: 80%;
+	}
+	.creation {
+		margin: 10px auto;
+	}
+}
